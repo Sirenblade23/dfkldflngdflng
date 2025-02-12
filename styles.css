@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #2962f4, #252327);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #e98b55;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.rock {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("Siren_Rock_Transparent.png");
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.banana {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url("banana.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.rock:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+#rock1 {
+  top: 20%;
+  left: 10%;
+}
+#rock2 {
+  top: 50%;
+  left: 30%;
+}
+#rock3 {
+  top: 70%;
+  left: 60%;
+}
+#rock4 {
+  top: 10%;
+  left: 80%;
+}
+#rock5 {
+  top: 45%;
+  left: 50%;
+}
+
+/* Fine */
+#banana1 {
+  top: 30%;
+  left: 5%;
+}
+
+/* Fine */
+#banana2 {
+  top: 60%;
+  left: 10%;
+}
+
+#banana3 {
+  top: 5%;
+  left: 35%;
+}
+
+/* Fine */
+#banana4 {
+  top: 45%;
+  left: 75%;
+}
+
+#banana5 {
+  top: 10%;
+  left: 60%;
+}
+
+#messageBox {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: none;
+  z-index: 10;
+}
+
+#messageBox p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
